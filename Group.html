@@ -27,7 +27,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More
-                        <i class="nav-arrow-down ti-angle-down"></i>
+                        <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul class="subnav">
                         <li><a href="#">Album</a></li>
@@ -36,10 +36,13 @@
                     </ul>
                 </li>
             </ul>
-            <!-- search -->
-            <div class="search-btn">
-                <i class="search-icon ti-search"> </i>
+            <div class="sign_in">
+                <a id="login" href="#">Sign Up/ Sign In</a>
             </div>
+            <!-- search -->
+            <!-- <div class="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div> -->
 
             <div id="mobile-menu" class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
@@ -75,7 +78,7 @@
         <div id="content">
             <!-- About section -->
             <div id="band" class="content-section">
-                <h2 class="section-heading">THE BAND</h2>
+                <h2 class="section-heading">COLD PLAY</h2>
                 <p class="section-sub-heading">We love my fans</p>
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -101,8 +104,16 @@
                         <p class="member-name">Name</p>
                         <img src="./img/band/member1.jpg" alt="" class="member-img" />
                     </div>
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./img/band/member1.jpg" alt="" class="member-img" />
+                    </div>
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./img/band/member1.jpg" alt="" class="member-img" />
+                    </div>
                 </div>
-                
+
             </div>
             <!-- tour section -->
             <div id="tour" class="tour-section">
@@ -203,72 +214,75 @@
             </div>
 
             <div class="map-section">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.451728915!2d-88.06161955725585!3d41.83377337729335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2zQ2hpY2FnbywgSWxsaW5vaXMsIEhvYSBL4buz!5e0!3m2!1svi!2s!4v1695985268773!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.451728915!2d-88.06161955725585!3d41.83377337729335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2zQ2hpY2FnbywgSWxsaW5vaXMsIEhvYSBL4buz!5e0!3m2!1svi!2s!4v1695985268773!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-        <div id="footer">
-            <div class="social-list">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-google"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-flickr"></i></a>
+            <div id="footer">
+                <div class="social-list">
+                    <a href=""><i class="ti-facebook"></i></a>
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-google"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-linkedin"></i></a>
+                    <a href=""><i class="ti-youtube"></i></a>
+                    <a href=""><i class="ti-flickr"></i></a>
 
+                </div>
+                <p class="copyright">Power by <a href="">w3.css</a></p>
             </div>
-            <p class="copyright">Power by <a href="">w3.css</a></p>
+
+            <a id="button"></a>
         </div>
 
-        <a id="button"></a>
-    </div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="ti-close"></i>
+                </div>
 
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
-                <i class="ti-close"></i>
+                <header class="modal-header">
+                    <i class="modal-heading-icon ti-bag"></i> Tickers
+                </header>
+
+                <div class="modal-body">
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Tickets, $50 per person
+                    </label>
+                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?" />
+
+                    <label for="ticket-email" class="modal-label">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        Your name
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter your name..." />
+
+                    <label for="ticket-email" class="modal-label">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Send to
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter your email..." />
+
+
+                    <button id="buy-tickets">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+                </div>
+
+                <footer class="modal-footer">
+                    <p class="modal-help"><a href="">Need help?</a></p>
+                </footer>
             </div>
-
-            <header class="modal-header">
-                <i class="modal-heading-icon ti-bag"></i> Tickers
-            </header>
-
-            <div class="modal-body">
-                <label for="ticket-quantity" class="modal-label">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    Tickets, $50 per person
-                </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?" />
-
-                <label for="ticket-email" class="modal-label">
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                     Your name
-                </label>
-                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter your name..." />
-
-                <label for="ticket-email" class="modal-label">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Send to
-                </label>
-                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter your email..." />
-
-
-                <button id="buy-tickets">
-                    Pay
-                    <i class="ti-check"></i>
-                </button>
-            </div>
-
-            <footer class="modal-footer">
-                <p class="modal-help"><a href="">Need help?</a></p>
-            </footer>
         </div>
-    </div>
 </body>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="./assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/main.js"></script>
 
 </html>

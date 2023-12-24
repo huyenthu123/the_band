@@ -165,23 +165,36 @@ html {
     right: 0px;
 }
 
+.sign_in {
+    float: right;
+    color: white;
+}
+
+.sign_in a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+    height: 100%;
 }
 
 #header .mobile-menu-btn:hover {
-    background-color: #ccc;
+    background-color: black;
 }
 
 #header .mobile-menu-btn:hover .menu-icon {
-    color: #000;
+    color: white;
 }
 
 #header .search-btn:hover {
     cursor: pointer;
-    background-color: #f44336;
+    background-color: white;
 }
 
 #header .menu-icon,
