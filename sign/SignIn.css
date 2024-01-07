@@ -2,12 +2,11 @@ body,
 html {
     margin: 0;
     height: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 .row {
     height: 100%;
-    /* background-image: url("https://i.pinimg.com/564x/fb/b2/eb/fbb2ebf26d4debcbcd30f4596392f308.jpg"); */
-    /* background-clip: url("https://www.coldplay.com/wp/wp-content/uploads/2021/07/MOT.mp4"); */
     background-color: #25367c;
     background-size: cover;
     padding-top: 100px;
@@ -26,7 +25,6 @@ html {
 .heading {
     text-align: center;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #FF32F3;
 }
 
